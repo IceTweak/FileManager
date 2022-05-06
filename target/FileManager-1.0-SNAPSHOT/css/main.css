@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&display=swap');
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    background: rgb(8, 128, 75);
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+#head-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin: 100px auto;
+}
+#header{
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+    margin-bottom: 20px;
+}
+#subheader{
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+#drop-area {
+    border: 3px dashed #9EBD13FF;
+    border-radius: 20px;
+    width: 480px;
+    font-family: sans-serif;
+    margin: 100px auto 0;
+    padding: 20px;
+    z-index: 100;
+}
+#drop-area.highlight {
+    border-color: #EE7F3BCE;
+}
+p {
+    margin-top: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.my-form {
+    margin-bottom: 10px;
+}
+#upload-list {
+    margin-top: 30px;
+}
+#upload-list img {
+    width: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 30px;
+}
+.button:hover {
+    background: #00b99e;
+    -webkit-box-shadow: 0px 0px 15px 8px #00b99e;
+    -moz-box-shadow: 0px 0px 15px 8px #00b99e;
+    box-shadow: 0px 0px 15px 8px #00b99e;
+}
+#fileElem {
+    display: none;
+}
+.del-btn{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 25px;
+    font-size: 18px;
+    float: right;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    color: white;
+    border-radius: 5px;
+}
+.file-line{
+    border-radius: 5px;
+    border: 1px solid #9EBD13FF;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 480px;
+}
+#upload{
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    height: 50px;
+}
+#upload:hover {
+    background: #D53369FF;
+    -webkit-box-shadow: 0px 0px 15px 8px  #D53369FF;
+    -moz-box-shadow: 0px 0px 15px 8px  #D53369FF;
+    box-shadow: 0px 0px 15px 8px  #D53369FF;
+}
+#download{
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    height: 50px;
+}
+#download:hover {
+    background: #3A47D5FF;
+    -webkit-box-shadow: 0px 0px 15px 8px #3A47D5FF;
+    -moz-box-shadow: 0px 0px 15px 8px  #3A47D5FF;
+    box-shadow: 0px 0px 15px 8px  #3A47D5FF;
+}
+#file_size{
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
