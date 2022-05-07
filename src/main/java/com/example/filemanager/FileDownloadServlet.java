@@ -55,7 +55,7 @@ public class FileDownloadServlet extends HttpServlet {
                     outStream.write(buffer, 0, bytesRead);
                 }
             } catch(IOException ex) {
-                System.out.println("Exception While Performing The I/O Operation?= " + ex.getMessage());
+                System.out.println("Ошибка при записи?= " + ex.getMessage());
             } finally {
                 if (inputStream != null) {
                     inputStream.close();
@@ -69,7 +69,7 @@ public class FileDownloadServlet extends HttpServlet {
 
             response.setContentType("text/html");
 
-            response.getWriter().println("<h3>File "+ fileName +" Is Not Present .....!</h3>");
+            response.getWriter().println("<h3>Файл "+ fileName +" Отсутствует в списке .....!</h3>");
         }
     }
 }
